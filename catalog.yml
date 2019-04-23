@@ -1,0 +1,90 @@
+metadata:
+  version: 1
+plugins:
+  source:
+  - module: intake_xarray
+sources:
+  20170831_162740_ssc1d1thumbnail:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_Freeport_s03_20170831T162740Z.png
+    description: Thumbnail
+    driver: xarray_image
+  20170831_162740_ssc1d1visual:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_Freeport_s03_20170831T162740Z.tif
+    description: SkySatScene Visual GeoTIFF
+    driver: rasterio
+  20170831_172754_101canalytic:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/20170831_172754_101c_3B_AnalyticMS.tif
+    description: PSScene4Band Analytic GeoTIFF
+    driver: rasterio
+  20170831_172754_101canalytic_xml:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/20170831_172754_101c_3B_AnalyticMS_metadata.xml
+    description: PSScene4Band XML Metadata
+    driver: textfiles
+  20170831_172754_101cthumbnail:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/20170831_172754_101c_thumb_large.png
+    description: Thumbnail
+    driver: xarray_image
+  20170831_172754_101cudm:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/20170831_172754_101c_3B_AnalyticMS_DN_udm.tif
+    description: PSScene4Band Unusable Data Mask
+    driver: rasterio
+  20170831_172754_101cvisual:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/20170831_172754_101c_3b_Visual.tif
+    description: PSScene3Band Visual GeoTIFF
+    driver: rasterio
+  20170831_195425_SS02thumbnail:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_PortArthur_s02_20170831T195425Z.png
+    description: Thumbnail
+    driver: xarray_image
+  20170831_195425_SS02visual:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_PortArthur_s02_20170831T195425Z.tif
+    description: SkySatScene Visual GeoTIFF
+    driver: rasterio
+  2017831_195552_SS02full-jpg:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_20170831T195552Z_RGB_Corrected.jpg
+    description: SkySatScene Visual JPG
+    driver: xarray_image
+  2017831_195552_SS02thumbnail:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_20170831T195552Z_RGB.png
+    description: Thumbnail
+    driver: xarray_image
+  2017831_195552_SS02visual:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/SkySat_20170831T195552Z_RGB.tif
+    description: SkySatScene Visual GeoTIFF
+    driver: rasterio
+  Houston-East-20170831-103f-100d-0f4f-RGBmosaic:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/Houston-East-20170831-103f-100d-0f4f-3-band.tif
+    description: 3 Band RGB Mosaic
+    driver: rasterio
+  Houston-East-20170831-103f-100d-0f4f-RGBthumbnail:
+    args:
+      chunks: {}
+      urlpath: https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/Houston-East-20170831-103f-100d-0f4f-3-band.png
+    description: Thumbnail
+    driver: xarray_image

@@ -1,0 +1,20 @@
+name: stac
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - numpy
+  - pandas
+  - dask
+  - xarray
+  - zarr
+  - jupyter
+  - nb_conda_kernels
+  - matplotlib
+  - intake
+  - intake_xarray
+  - rasterio
+  - requests
+  - pip:
+    - sat-stac
